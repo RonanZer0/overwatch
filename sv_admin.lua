@@ -98,7 +98,7 @@ function overwatch.Ban(ply, args)
     if !victim or !IsValid(victim) then overwatch.Print(ply, args[1].." is not a valid player!") return end;
     overwatch.FindPlayer(args[1]):Ban(args[2], true);
 end
--- right click on people on scoreboard to do stuff to em
+
 function overwatch.Kill(ply, args)
     local victim;
     if !args[1] or args[1] == "!kill" then
