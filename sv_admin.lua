@@ -45,7 +45,7 @@ end
 function overwatch.FindPlayer(nick, ply)
     local r;
     for _, v in pairs(player.GetAll()) do
-        if !string.find(v:Nick(), nick) then continue end;
+	if !string.find(string.lower(v:Nick()), nick) then continue end;
         if !r then
             r = v;
         else
